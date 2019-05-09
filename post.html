@@ -1,0 +1,241 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Bränboll</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+<script src="main.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Lägger till en grå bakgrund med hjälp av padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog tittel */
+.header {
+  padding: 100px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+/*möjligör att texten flyter åt vänster*/
+.scroll-left {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+}
+
+/*del 2 */
+.scroll-left p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);	
+ transform:translateX(100%);
+
+ /* Apply animation to this element */	
+ -moz-animation: scroll-left 10s linear infinite;
+ -webkit-animation: scroll-left 10s linear infinite;
+ animation: scroll-left 10s linear infinite;
+}
+/* (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   { 
+ -moz-transform: translateX(100%); /* Sida bug fix 1.0 */
+ -webkit-transform: translateX(100%); /* Sida bug fix 2,0*/
+ transform: translateX(100%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-100%); /* Sida bug fix 2.1*/
+ -webkit-transform: translateX(-100%); /* Sida bug fix 2.2 */
+ transform: translateX(-100%); 
+ }
+}
+/* knapp*/
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/*center för...*/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+/*färg till banner*/
+.body {background-color:#FFA500}
+
+  
+</style>
+</head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container body">
+        <a class="navbar-brand" href="https://www.youtube.com/watch?v=wlaJttqyypY&t=95s">Yran 2019</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="brannboll.html">Hem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Om</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="post.html">Nyheter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Kontakta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+<!--Bild ett + rubrik-->
+  
+<div class="header">
+  <h2>Yran som du aldrig kommer att glömma</h2>
+</div>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Yran som du aldrig kommer att glömma</h2>
+      <h5>#SUPERYRAN, Feb 27, 2019</h5>
+      <img src="images/bild2.jpg" alt="jpg"  height="1200px"; width="100%">
+      <p>Brännbollsyran arrangerades första gången 1979 med syftet att stävja de inofficiella festivalerna på Ålidhem.. som hade en tendens att urarta varje år.Den officiella festivalen fick dock bara som effekt att den inofficiella festivalen fick draghjälp... Nu är det 40 år sedan första turneringen hölls och det ska firas </p>
+    </div>
+    <!--Bild två + rubrik-->
+    <div class="card">
+      <h2>Vi börjar att få slut på biljetter</h2>
+      <h5>#Getyourtickets, Feb 28, 2019</h5>
+      <img src="images/bild1.jpg" alt="jpg" margin-left="300px"; height="400px"; width="75%"px>
+      <p>Missa inte att bli utan biljett</p>
+      <p>Köp nu medans det fortfarande finns kvar och få chansen att vinna ett VIP pass under festivalen.</p>
+    </div>
+  </div>
+  <!--Logga för yran-->
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Yran 2019</h2>
+      <a href="https://www.brannbollsyran.com/tickets"> 
+      <img src="images/bild3.jpg" alt="jpg"  height="200px"; width="100%"px>
+      </a>
+      <p>MAY 30th - JUNE 1st  2019  |  CAMPUS ARENA  |  UMEÅ  |  SWEDEN</p>
+    </div>
+    <!--Artister + rubrik-->
+    <div class="card">
+      <h3>Kolla in detta</h3>¨
+      <!--Marshmellow + hemsida-->
+   <a href="https://marshmellomusic.com/"> 
+      <img src="images/bild4.jpg" alt="jpg"  height="200px"; width="100%"px>
+    </a>
+    <!--Vigiland + twitter-->
+    <a href="https://twitter.com/vigiland1"> 
+      <img src="images/bild8.jpg" alt="jpg"  height="200px"; width="100%"px>
+      </a>
+      <!--Headhunterz + hemsida-->
+      <a href="https://headhunterz.com/"> 
+      <img src="images/bild5.jpg" alt="jpg"  height="200px"; width="100%"px>
+    </a>
+    </div>
+    <!--Twitter bild + (error länk)-->
+    <div class="card">
+      <h3>Följ oss på</h3>
+      <p>Twitter</p>
+      <img src="images/bild7.jpg" alt="jpg"  height="250px"; width="100%"px>
+    </a>
+    <!--Knapp för att komma tillbaka till startsida-->
+      <a href="brannboll.html" class="button">Tillbaka</a>
+    </div>
+  </div>
+</div>
+<!--info ruta-->
+<div class="footer">
+  <h2></h2> 
+  <div class="scroll-left">
+        <p>BRÄNNBOLLSYRAN ÄR NORRA SKANDINAVIENS STÖRSTA MUSIKFESTIVAL
+                MED VM I BRÄNNBOLL.DEN 30 MAJ - 1 JUNI. #SUPERYRAN.</p>
+        </div>
+</div>
+
+</body>
+</html>
