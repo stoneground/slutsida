@@ -5,34 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Bränboll</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <title>Yran 2019</title>
   </head>
-<style>.center {
+<style>  .center {
   margin-left: auto;
   margin-right: auto;
   display: block
 }
 .body {background-color:#FFA500}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+  
 </style>
   <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container body">
-        <!--Länkt till youtube-->
         <a class="navbar-brand" href="https://www.youtube.com/watch?v=wlaJttqyypY&t=95s">Yran 2019</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-       
-            <!--Hem,Om,Nyheter och kontakta-->
             <li class="nav-item">
               <a class="nav-link" href="brannboll.html">Hem</a>
             </li>
@@ -43,7 +65,13 @@
               <a class="nav-link" href="post.html">Nyheter</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="test.html">test</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Kontakta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="game.html">Spel</a>
             </li>
           </ul>
         </div>
@@ -63,7 +91,7 @@
     </header>
     <!--Försök att lägga in video -->
     <div class="center">
-      <iframe src="film1.mp4" width="920" height="518" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" vidtapeorigprops="{"w":"","h":"","t":"","l":"","z":"","p":"","boxShadow":""}" vidtapeabovecount="0"></iframe>
+      <iframe src="film1.mp4" width="920" height="518" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" position="auto"></iframe>
 
 
           <!-- Pager -->

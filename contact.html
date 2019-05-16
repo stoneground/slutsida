@@ -1,142 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<title>Site Maintenance</title>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Bränboll</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-<script src="js/main.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bränboll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<style>
-  body { text-align: center; padding: 150px; }
-  h1 { font-size: 50px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  article { display: block; text-align: left; width: 650px; margin: 0 auto; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-  .topleft {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-  font-size: 18px;
-}
-/* Stänger scrollern*/ 
-  html,body{
-overflow-y:hidden;
-overflow-x:hidden;
-}
-/* Text över muppar */
-.hvrbox,
-.hvrbox * {
-	box-sizing: border-box;
-}
-.hvrbox {
-	position: relative;
-	display: inline-block;
-	overflow: hidden;
-	max-width: 100%;
-	height: auto;
-}
-.hvrbox .hvrbox-layer_bottom {
-	display: block;
-}
-.hvrbox .hvrbox-layer_top {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
-}
-.hvrbox:hover .hvrbox-layer_top,
-.hvrbox.active .hvrbox-layer_top {
-	opacity: 1;
-}
-.hvrbox .hvrbox-text {
-	text-align: center;
-	font-size: 10px;
-	display: inline-block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-.hvrbox .hvrbox-text_mobile {
-	font-size: 15px;
-	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
-	border-top: 1px solid rgba(179, 179, 179, 0.7);
-	margin-top: 5px;
-	padding-top: 2px;
-	display: none;
-}
-.hvrbox.active .hvrbox-text_mobile {
-	display: block;
-}
-/*
-button {
-    background-color: black;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
-  */
-
- /* 
-  footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color: black;
-   color: white;
-   text-align: center;
-}
-*/
-.knapp {
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
-}
-
-.knapp:hover {background: #eee;}
-
-.grattis {color: green;}
-.info {color: dodgerblue;}
-.varning {color: orange;}
-.fara {color: red;}
-.vanlig {color: black;}
-.center {
+<title>Yran 2019</title>
+  </head>
+<style>  .center {
   margin-left: auto;
   margin-right: auto;
   display: block
 }
 .body {background-color:#FFA500}
 
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
   
 </style>
   <body>
@@ -160,33 +65,60 @@ button {
               <a class="nav-link" href="post.html">Nyheter</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="test.html">test</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="contact.html">Kontakta</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="test.html">test</a>
-          </li>
-          <li class="nav-item">
-                <a class="nav-link" href="game.html">Spel</a>
-              </li>
+              <a class="nav-link" href="game.html">Spel</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-<article>
-    <h1>We'll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we're performing some maintenance at the moment. If you need to you can always <a href="about.html">contact us</a>, otherwise we'll be back online shortly!</p>
-        <!--<button class="knapp varning">-->
-          <a ref="#">The Team</a>
-          </div>
-        <div class="hvrbox">
-        <img src="images/bild9.jpg" alt="jpg" style="width:24%;height:24%;">
-        <div class="hvrbox-layer_top">
-          <div class="hvrbox-text ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-        </div>
-          <img src="images/bild10.jpg" alt="jpg" style="width:24%;height:24%;">
-          <img src="images/bild11.jpg" alt="jpg" style="width:24%;height:24%;">
-        <img src="images/bild9.jpg" alt="jpg" style="width:24%;height:24%;">
-      </article>
-   </html>
-  
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url(images/bild6.jpg);
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1></h1>
+              <span class="subheading"></span>
+              <div class= "body">
+
+            </div>
+            </div>
+    </header>
+    
+    <h3>Kontakt Forum</h3>
+
+    <div class="container">
+      <form action="/action_page.php>">
+        <label for="fname">Förnamn</label>
+        <input type="text" id="fname" name="firstname" placeholder="Ditt namn..">
+    
+        <label for="lname">Efternamn</label>
+        <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+    
+        <label for="country">Stad</label>
+        <select id="country" name="Stad">
+          <option value="malå">Malå</option>
+          <option value="umeå">Umeå</option>
+          <option value="åmål">Åmål</option>
+        </select>
+    
+        <label for="subject">Vad du vill förmedla</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit" >
+      </form>
+    </div>
+    
+    </body>
+    </html>
+    
+
+    
